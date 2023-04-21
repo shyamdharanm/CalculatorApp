@@ -1,6 +1,6 @@
 
 .calculator {
-    border: 1px solid #eb660e;
+    border: 1px solid #41403f;
     padding: 10px;
     width: 200px;
     text-align: center;
@@ -21,6 +21,6 @@
   }
   
   .operator {
-    background-color: #f18305;
+    background-color: #f1efed;
   }
   
