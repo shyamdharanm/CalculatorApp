@@ -1,17 +1,16 @@
-let displayValue = '';
-
-function buttonClicked(button) {
-  displayValue += button.textContent;
-  document.getElementById('display').value = displayValue;
+// This function clear all the values
+function clearScreen() {
+    document.getElementById("result").value = "";
 }
-
-function clearDisplay() {
-  displayValue = '';
-  document.getElementById('display').value = displayValue;
+ 
+// This function display values
+function display(value) {
+    document.getElementById("result").value += value;
 }
-
+ 
+// This function evaluates the expression and returns result
 function calculate() {
-  const result = eval(displayValue);
-  document.getElementById('display').value = result;
-  displayValue = result.toString();
+    var p = document.getElementById("result").value;
+    var q = eval(p);
+    document.getElementById("result").value = q;
 }
